@@ -6,7 +6,7 @@ function accessDenied(accessDenied) {
 
 if (numeroEdad < "18") {
     accessDenied()
-    window.location.href = "../images/accesdenied.webp"
+    window.location.href = "../pages/deny.html"
 }
 else {
     alert("ACCESS GRANTED")

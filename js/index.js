@@ -6,7 +6,7 @@ function accessDenied(accessDenied) {
 
 if (numeroEdad < "18") {
     accessDenied()
-    window.location.href = "/pages/deny.html"
+    window.location.href = "militairessansfrontieres/pages/deny.html"
 }
 else {
     alert("ACCESS GRANTED")

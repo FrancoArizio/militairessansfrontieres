@@ -1,7 +1,12 @@
-function course(courseName, coursePrice, courseLength) {
-    this.courseName = courseName;
-    this.coursePrice = coursePrice;
-    this.courseLength = courseLength;
+class course {
+    constructor(courseName, coursePrice, courseLength) {
+        this.courseName = courseName;
+        this.coursePrice = coursePrice;
+        this.courseLength = courseLength;
+    }
+    taxPriceCalc() {
+        return this.coursePrice * 1.21;
+    }
 }
 let course1 = new course("Basic Training", 2500, "6 Weeks");
 let course2 = new course("Operator Training", 2000, "4 Weeks");
@@ -16,10 +21,15 @@ const courses = [course1, course2, course3, course4, course5, course6]
 console.log(courses)
 console.log(courses.length)
 
-for (i = 0; i < courses.length; i++) {
-    prompt=courseId
-    courseId = i
-    if ( courseId == courses[i].courseName) {
-        console.log(courses[i].id)
+alert("These are the courses available, COPY the name that you would like to get more info about \n Basic Training \n Operator Training \n CQB Training \n Artillery Training \n Survival Training \nCombat Medic Training")
+const extract = () => {
+    let namePrompt = prompt('Insert course name');
+    let newObject = courses.find(element => namePrompt === element.courseName)
+    console.log(newObject)
+    if (newObject.courseName === namePrompt) {
+        alert( "Name: " + newObject.courseName +"\n" + "Price: " + newObject.coursePrice + "\n" + "Duration: " + newObject.courseLength)
     }
 }
+extract();
+
+

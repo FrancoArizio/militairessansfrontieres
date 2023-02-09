@@ -17,13 +17,13 @@
 
 <body>
     <div class="top">
-       <a href="../index.html"> <img src="../images/logo.png" alt="" class="logo"> </a>
+        <a href="../main.html"> <img src="../images/logo.png" alt="" class="logo"> </a>
     </div>
     <div class="form_container">
         <div class="form">
             <div><img class="form_image" src="../images/formimage.jpg" alt=""></div>
             <div class="form_boxes">
-                <form class="form_data" method="post">
+                <form class="form_data" id="formulario">
                     <ul class="form_ul">
                         <li>
                             <label for="name">Name:</label>
@@ -45,10 +45,15 @@
                             <label class="job" for="msg">About the job:</label>
                             <textarea class="job" id="msg" name="user_message"></textarea>
                         </li>
+                        <li>
+                            <input type="submit" id="submit" value="send"/>
+                        </li>
                     </ul>
+                </form>
             </div>
         </div>
     </div>
+    <script src="../js/contractus.js"></script>
 </body>
 
 </html>

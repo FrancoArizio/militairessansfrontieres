@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Militaires Sans Frontieres</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>LogInMSF</title>
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-</style>
-
 <body>
     <div class="top">
-        <img src="images/logo.png" alt="" class="logo">
+        <a href="../main.html"> <img src="../images/logo.png" alt="" class="logo"> </a>
     </div>
-    <div class="display-1">
-        <h2><a href="pages/contractus.html">CONTRACT US</a></h2>
-    </div>
-    <div class="display-2">
-        <h2><a href="pages/trainingcourses.html">TRAINING COURSES</a></h2>
-    </div>
-    <div class="display-3">
-        <h2><a href="pages/rescueoperations.html">RESCUE OPERATIONS</a></h2>
-    </div>
-    <div class="display-4">
-        <h2><a href="pages/aboutus.html">ABOUT US</a></h2>
-    </div>
-    <script src="../js/index.js"></script>
-</body>
+    <form class="form_data-log" id="formulario_log">
+        <ul class="form_ul-log">
+            <li>
+                <label for="name">Name:</label>
+                <input class="logForm" type="text" id="name" name="user_name" />
+            </li>
+            <li>
+                <label for="surename">Surename:</label>
+                <input class="logForm" type="text" id="surename" name="user_surename" />
+            </li>
+            <li>
+                <label class="age" for="age">Age:</label>
+                <textarea class="logForm" id="age" name="user_age"></textarea>
+            </li>
+            <li>
+                <input type="submit" id="submit" value="send"/>
+            </li>
+            <p id="errorLog"></p>
+            </form>
 
+            <script src="../js/index.js"></script>
+</body>
 </html>

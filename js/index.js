@@ -1,29 +1,18 @@
-const numeroEdad = parseInt(prompt("ENTER AGE"));
+const formulario = document.getElementById("formulario_log")
 
-function accessDenied(accessDenied) {
-    return alert("ACCESS DENIED")
-}
+formulario.addEventListener('submit', (e) =>{
+    e.preventDefault();
 
-if (numeroEdad < "18") {
-    accessDenied()
-    window.location.href = "pages/deny.html"
-}
-else {
-    alert("ACCESS GRANTED")
-    let listaDeNombres = "";
-    let nombreIngresado = prompt("ENTER EVERY SOLDIER NAME, TYPE STOP WHEN DONE")
-
-    while (nombreIngresado !== "STOP") {
-        listaDeNombres = listaDeNombres + "\n" + nombreIngresado;
-        nombreIngresado = prompt("ENTER EVERY SOLDIER NAME, TYPE STOP WHEN DONE")
+    const logIn = {
+        nombre: e.target[0].value,
+        surename: e.target[1].value,
+        edad: e.target[2].value,
     }
-
-    alert("THIS SOLDIERS HAVE BEEN REGISTRED" + listaDeNombres)
-
-}
-
-
-
-
-
-
+    if (logIn.edad < 18){
+        errorLog.innerText = 'You are not over 18';
+        return
+    } 
+    else {
+        window.location.href = "/main.html"
+    }
+});

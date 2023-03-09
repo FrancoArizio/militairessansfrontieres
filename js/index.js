@@ -16,4 +16,6 @@ formulario.addEventListener('submit', (e) =>{
         window.location.href = "/main.html"
     }
 });
+
+console.log(process.env.PUBLIC_URL)
 /* COMENTARIO PARA HACER EL PUSH */

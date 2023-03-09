@@ -39,7 +39,7 @@ img {
 }
 
 body {
-    background-color: rgb(243, 239, 7);
+    background-color: hsl(59, 94%, 49%);
     font-family: 'Roboto', sans-serif;
 
 }
@@ -418,4 +418,29 @@ body {
     font-size: x-large;
     width: 150px;
     height: 50px;
+}
+
+.shopping-cart-items {
+    padding: 20px 0px;
+}
+
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
 }

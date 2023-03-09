@@ -14,6 +14,6 @@ formulario.addEventListener('submit', (e) =>{
     } 
     else {
         /* window.location.href = "../main.html" */
-        window.location.href = "/militairessansfrontieres/main.html"
+        window.location.href = "militairessansfrontieres//main.html"
     }
 });

@@ -13,6 +13,6 @@ formulario.addEventListener('submit', (e) =>{
         return
     } 
     else {
-        window.location.href = "/main.html"
+        window.location.href = "../main.html"
     }
 });

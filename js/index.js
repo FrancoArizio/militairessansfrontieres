@@ -13,9 +13,6 @@ formulario.addEventListener('submit', (e) =>{
         return
     } 
     else {
-        window.location.href = "/main.html"
+        window.location.href = "militairessansfrontieres/main.html"
     }
 });
-
-console.log(process.env.PUBLIC_URL)
-/* COMENTARIO PARA HACER EL PUSH */

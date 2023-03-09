@@ -13,6 +13,14 @@ formulario.addEventListener('submit', (e) =>{
         return
     } 
     else {
-        window.location.href = "militairessansfrontieres/main.html"
+        if(
+            window.location.href.includes("militairessansfrontieres")
+
+        ){
+            window.location.href = "/militairessansfrontieres/main.html"
+        }
+        else{
+            window.location.href = "/main.html"
+        }
     }
 });

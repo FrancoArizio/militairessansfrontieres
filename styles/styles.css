@@ -444,3 +444,30 @@ body {
 .shopping-cart-total {
     min-height: 96px;
 }
+
+.adContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+}
+
+.adContainer h1{
+    color: #000;
+    font-size: 24px;
+}
+
+.adContainer p{
+    color: #000;
+    font-size: 20px;
+}
+
+.adContainer img{
+    width: 100px;
+    height: 100px;
+}
+
+.pForAd{
+    
+}

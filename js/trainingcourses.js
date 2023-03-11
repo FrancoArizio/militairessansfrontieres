@@ -148,6 +148,23 @@ function addItemToCart() {
 
 }
 
+let numberRandom = Math.floor(Math.random() * 19) + 1;
+
+fetch('https://fakestoreapi.com/products/2')
+.then(res => res.json())
+.then(json => {
+    console.log(json)
+    const {title, image, price} = json
+    const divAd = `
+    <div class="adContainer">
+    <h1>${title}</h1>
+    <img src="${image}"/>
+    <p>$${price}</p>
+    <p class="pForAd">Ad</p>
+    </div>`
+    document.getElementById('banner1').innerHTML = divAd
+})
+
 
 
 
